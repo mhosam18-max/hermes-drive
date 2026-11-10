@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes Drive</title>
+<meta name="description" content="A private automation assistant that organises event-management documents in its owner's own Google Drive.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1d21;
+    --muted: #5b6671;
+    --line: #e3e7eb;
+    --accent: #1f6feb;
+    --card: #f7f9fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1216;
+      --fg: #e8ecef;
+      --muted: #9aa5b1;
+      --line: #252b33;
+      --accent: #6ea8ff;
+      --card: #161b22;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1216;
+    --fg: #e8ecef;
+    --muted: #9aa5b1;
+    --line: #252b33;
+    --accent: #6ea8ff;
+    --card: #161b22;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 64px 16px 96px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 28px; margin-bottom: 36px; }
+  h1 { font-size: 30px; line-height: 1.25; margin: 0 0 10px; letter-spacing: -0.015em; }
+  .tag { color: var(--muted); font-size: 16px; margin: 0; }
+  h2 { font-size: 18px; margin: 36px 0 12px; letter-spacing: -0.01em; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { margin-bottom: 7px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 24px 0;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  @media (max-width: 520px) {
+    .wrap { padding: 40px 16px 64px; }
+    h1 { font-size: 25px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Hermes Drive</h1>
+    <p class="tag">A private automation assistant for event-management paperwork.</p>
+  </header>
+
+  <p>
+    Hermes Drive is a single-user application. It is operated by one person, on their own
+    private server, to reduce the manual work involved in producing recurring
+    event-management documents — agendas, quotations, sponsorship price lists, invitations
+    and delegation letters.
+  </p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Reads approved document templates and business rules from a private repository.</li>
+    <li>Reads reference data — event names, sponsor names, speaker records — from the owner's own Google Sheets.</li>
+    <li>Generates the finished documents and files them in the correct folder of the owner's own Google Drive.</li>
+    <li>Checks each generated document before it is delivered: page count, layout, stamp and signature.</li>
+  </ul>
+
+  <h2>Who can use it</h2>
+  <p>
+    Nobody but its owner. The application is not offered as a service, has no sign-up,
+    no users other than the account that owns it, and no public interface. These pages exist
+    only because Google requires a published home page and privacy policy for any
+    application that requests access to a Google account.
+  </p>
+
+  <div class="card">
+    <p>
+      <strong>Privacy:</strong> the application accesses only the owner's own Google account,
+      and the data it reads is never sold, shared, or sent to any third party.
+    </p>
+    <p><a href="privacy.html">Read the full privacy policy →</a></p>
+  </div>
+
+  <footer>
+    Hermes Drive · a personal automation project · not a commercial product
+  </footer>
+
+</div>
+</body>
+</html>
